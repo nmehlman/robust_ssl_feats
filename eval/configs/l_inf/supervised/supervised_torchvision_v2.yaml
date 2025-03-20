@@ -1,0 +1,16 @@
+model_type: "torchvision"
+weights_name: "IMAGENET1K_V2"
+
+imagenet_kwargs:
+  transform_name: 'supervised_torchvision_v2'
+  batch_size: 16
+
+attack: 'pgd'
+
+attack_kwargs:
+  eps: 0.05
+  norm: 'inf'
+  max_iter: 10
+  targeted: false
+
+results_path: './results/l_inf/supervised/supervised_torchvision_v2'

@@ -1,0 +1,16 @@
+model_type: "sim_clr"
+weights_name: "r50_1x_sk0_supervised"
+
+imagenet_kwargs:
+  transform_name: 'supervised_sim_clr'
+  batch_size: 16
+
+attack: 'pgd'
+
+attack_kwargs:
+  eps: 0.0197
+  norm: 'inf'
+  max_iter: 10
+  targeted: false
+
+results_path: './results/l_inf/supervised/supervised_sim_clr'

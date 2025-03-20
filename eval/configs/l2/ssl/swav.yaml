@@ -1,0 +1,15 @@
+weights_name: 'swav_resnet50_linear-8xb32-coslr-100e_in1k_20220825-80341e08_torchvision'
+
+imagenet_kwargs:
+  transform_name: 'default'
+  batch_size: 16
+
+attack: 'pgd'
+
+attack_kwargs:
+  eps: 1.0
+  norm: 2
+  max_iter: 50
+  targeted: false
+
+results_path: './results/l2/ssl/swav'
