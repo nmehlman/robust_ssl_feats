@@ -28,3 +28,8 @@
 
 6. **Download Weights Files**:
     You can download weights files from the MMSelfSup repo using the `download_and_parse_mmselfsup_weights.py` file. Refer to the [MMSelfSup Model Zoo](https://mmselfsup.readthedocs.io/en/latest/model_zoo.html) for weights files.
+
+## Running Experiments
+```python
+python eval/main_robustness_eval.py <config-path>
+```
